@@ -1,5 +1,3 @@
-Perfeito. Vou manter todo o conteúdo e só acrescentar uma nova seção no final, sem mexer no restante.
-
 ```html
 <!doctype html>
 <html lang="pt-BR">
@@ -86,6 +84,30 @@ Perfeito. Vou manter todo o conteúdo e só acrescentar uma nova seção no fina
     .small{font-size:.95rem}
     .center{text-align:center}
     .note{color:var(--warn)}
+
+    /* novo visual evangelístico */
+    .highlight{
+      border:1px solid rgba(134,239,172,.35);
+      background:linear-gradient(180deg, rgba(134,239,172,.10), rgba(125,211,252,.06));
+      box-shadow:0 0 0 1px rgba(134,239,172,.08) inset, 0 10px 30px rgba(0,0,0,.22);
+    }
+    .highlight h2{color:var(--good)}
+    .verse{
+      border-left:4px solid var(--good);
+      background:rgba(134,239,172,.08);
+    }
+    .accent-box{
+      border:1px solid rgba(125,211,252,.25);
+      background:rgba(125,211,252,.06);
+    }
+    .callout{
+      margin-top:14px;
+      padding:14px 16px;
+      border-radius:12px;
+      border:1px solid rgba(167,139,250,.25);
+      background:rgba(167,139,250,.08);
+      color:var(--text);
+    }
   </style>
 </head>
 <body>
@@ -222,21 +244,27 @@ Perfeito. Vou manter todo o conteúdo e só acrescentar uma nova seção no fina
       </p>
     </section>
 
-    <section>
-      <h2>Fundamentos do pensamento científico e teológico</h2>
+    <section class="highlight">
+      <h2>Chamado evangelístico</h2>
       <div class="grid">
-        <div class="box">
-          <h3>Ciência</h3>
-          <p>Ciência é um método sistemático de produzir conhecimento confiável, baseado em observação, hipótese, teste, análise e revisão.</p>
+        <div class="box accent-box">
+          <h3>Deus criou, sustenta e chama</h3>
+          <p>A criação não é acaso sem propósito. Ela aponta para a glória de Deus e para a responsabilidade humana diante dEle.</p>
         </div>
-        <div class="box">
-          <h3>Teologia</h3>
-          <p>Teologia também é um campo de conhecimento, voltado à reflexão sobre Deus, revelação e fé, com coerência interna e interpretação responsável.</p>
+        <div class="box accent-box">
+          <h3>O problema humano é também espiritual</h3>
+          <p>O abuso da criação nasce de desordem interior, orgulho e afastamento do Criador.</p>
         </div>
-        <div class="box">
-          <h3>Processo do pensamento</h3>
-          <p>Tese, antítese, hipótese e síntese ajudam a organizar o raciocínio, confrontar ideias e construir conclusões mais sólidas.</p>
+        <div class="box accent-box">
+          <h3>O caminho é arrependimento e restauração</h3>
+          <p>Servir a Deus envolve fé, mudança de vida e cuidado fiel com aquilo que Ele confiou ao ser humano.</p>
         </div>
+      </div>
+      <blockquote class="verse">
+        “O céu proclama a glória de Deus, e o firmamento anuncia as obras das suas mãos.”
+      </blockquote>
+      <div class="callout">
+        Quando a fé encontra a verdade, a ciência deixa de ser inimiga e se torna uma testemunha da ordem da criação.
       </div>
     </section>
 
@@ -248,5 +276,3 @@ Perfeito. Vou manter todo o conteúdo e só acrescentar uma nova seção no fina
 </body>
 </html>
 ```
-
-Se quiser, eu também posso colocar essa nova seção com um visual mais “evangelístico” sem mexer no texto.
